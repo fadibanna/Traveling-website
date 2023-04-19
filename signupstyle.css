@@ -1,0 +1,139 @@
+/* General Styles */
+
+:root {
+  --main-color: #0077cc;
+  --white: #fff;
+  --black-color: #333;
+  --hover-color: #005299;
+  --main-transition: all 0.3s ease-in-out;
+}
+#error-message {
+  color: red;
+  margin-top: 5px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+body {
+  
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+a {
+  color: var(--main-color);
+  text-decoration: none;
+}
+
+h1, h2 {
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--black-color);
+}
+
+p {
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+button {
+  display: inline-block;
+  background-color: var(--main-color);
+  color: var(--white);
+  border: none;
+  border-radius: 0.3rem;
+  padding: 0.8rem 1.2rem;
+  cursor: pointer;
+  transition: var(--main-transition);
+}
+
+button:hover {
+  background-color: var(--hover-color);
+}
+
+/* Layout Styles */
+
+header {
+  background-color: var(--main-color);
+  color: var(--white);
+  padding: 1rem;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0;
+}
+
+main {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: var(--white);
+  border-radius: 0.3rem;
+  box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: var(--black-color);
+}
+
+form input[type="email"],
+form input[type="password"] {
+  padding: 0.8rem;
+  border-radius: 0.3rem;
+  border: 0.1rem solid #ccc;
+  margin-bottom: 1rem;
+  transition: var(--main-transition);
+}
+
+form input[type="email"]:focus,
+form input[type="password"]:focus {
+  outline: none;
+  border-color: var(--main-color);
+  box-shadow: 0 0 0.3rem rgba(0, 119, 204, 0.4);
+}
+
+form button[type="submit"] {
+  margin-top: 1rem;
+  align-self: flex-start;
+}
+
+form p {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+form p a {
+  font-weight: 700;
+}
+
+footer {
+  text-align: center;
+  margin-top: 2rem;
+  color: #666;
+  font-size: 0.8rem;
+}
+
+/* Responsive Styles */
+
+@media screen and (max-width: 600px) {
+  main {
+    margin: 1rem;
+  }
+}
