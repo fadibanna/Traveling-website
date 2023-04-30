@@ -356,6 +356,78 @@ video.live {
 /* End Home Section */
 
 /* Start Book Section  */
+
+.book {
+  background-color: #f7f7f7;
+  padding: 80px 0;
+}
+
+.heading {
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 60px;
+}
+
+.heading span {
+  display: inline-block;
+  position: relative;
+  font-weight: 700;
+}
+
+.heading .space {
+  width: 30px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.book__row__image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+
+.book__row--form {
+  width: 50%;
+}
+
+
+.inputBox {
+  margin-bottom: 20px;
+}
+
+
+.inputBox h3 {
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: #777;
+}
+
+
+input[type="text"], 
+input[type="number"], 
+input[type="date"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  background-color: #f7f7f7;
+  color: #333;
+}
+
+
+/* Submit button hover styles */
+.btn:hover {
+  background-color: #0061cc;
+} 
+
 .heading {
   text-align: center;
 }
@@ -533,7 +605,7 @@ video.live {
 .destination__content .btn {
   border: 2px solid black;
   color: black;
-  padding: 0, 5rem 1rem;
+  padding: 0.5rem 1.5rem;
   transition: var(--main-transition);
 }
 
