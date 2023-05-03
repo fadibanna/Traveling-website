@@ -41,7 +41,7 @@ formClose.addEventListener("click", hiddenForm);
 
 // Start Home Controls
 const country = document.querySelector(".big-text");
-let countries = ["Egypt", "Dubai", "luxurious", "Desert", "Seashore"];
+let countries = ["Egypt", "Dubai", "Luxurious", "Desert", "Seashore"];
 let index = 0;
 let counter = 0;
 
